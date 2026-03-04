@@ -1,6 +1,9 @@
+//This is the LSTM header file
+
 #ifndef LSTM_H
 #define LSTM_H
 
+//Includes
 #include <Eigen/Dense>
 #include <iostream>
 #include <vector>
@@ -9,6 +12,7 @@
 using Eigen::VectorXd;
 using Eigen::MatrixXd;
 
+//  --PAIN--
 struct LSTM {
 
     int input_dim;
@@ -65,6 +69,7 @@ struct LSTM {
         return exps / exps.sum();
     }
 
+// Pain squared
     VectorXd forward(const VectorXd &x) {
 
         assert(x.size() == input_dim && "Input vector size mismatch!");
