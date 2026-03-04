@@ -9,7 +9,7 @@
 constexpr int vocab_size = 274;
 constexpr int hidden_dim = 16;
 
-// simple one-hot embedding
+// simple one-hot embedding <-- I Don't think this was ever implemented
 Eigen::MatrixXd embeddings = Eigen::MatrixXd::Identity(vocab_size, vocab_size);
 
 int main() {
@@ -17,6 +17,7 @@ int main() {
 
     crow::SimpleApp app;
 
+    // Poorly designed web interface
     CROW_ROUTE(app, "/")([]() {
         return R"HTML(
         <!DOCTYPE html>
@@ -93,12 +94,11 @@ int main() {
         result["h"] = h_vals;
         result["probs"] = prob_vals;
 
-        // Optional: include weight magnitudes for future coloring
-        // std::vector<double> weights; fill with lstm weights if you want
+        // std::vector<double> weights; <-- Do something about this for V2
 
         return result;
     });
 
-    std::cout << "Server running on http://0.0.0.0:8080\n";
+    std::cout << "Server running on http://0.0.0.0:8080\n"; // Should get a domain or something IDK
     app.port(8080).multithreaded().run();
 }
