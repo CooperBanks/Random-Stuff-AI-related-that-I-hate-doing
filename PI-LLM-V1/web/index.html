@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Tiny LLM Neural Dashboard</title>
+  <style>
+    body { 
+      font-family: monospace; 
+      background: #111; 
+      color: #0f0; 
+      padding: 20px;
+    }
+    .bar { 
+      height: 12px; 
+      background: lime; 
+      margin: 2px 0; 
+      transition: width 0.1s; 
+    }
+    input { 
+      width: 20px; 
+      font-size: 16px; 
+      text-align: center; 
+    }
+    button { 
+      font-size: 16px; 
+      margin-left: 8px; 
+    }
+    h3 { 
+      margin-top: 20px; 
+      margin-bottom: 5px; 
+    }
+  </style>
+</head>
+<body>
+  <h2>Tiny LLM Neural Dashboard</h2>
+  <input id="char" value="a" maxlength="1"/>
+  <button onclick="step()">Fire</button>
+
+  <h3>Hidden Layer Activations</h3>
+  <div id="hidden"></div>
+
+  <h3>Top Probabilities</h3>
+  <div id="probs"></div>
+
+  <script>
+    async function step() {
+      const c = document.getElementById("char").value;
+      const res = await fetch("/step?c=" + encodeURIComponent(c));
+      const data = await res.json();
+
+      // Update neuron bars
+      const container = document.getElementById("hidden");
+      container.innerHTML = "";
+      data.h.forEach(v => {
+        const bar = document.createElement("div");
+        bar.className = "bar";
+        bar.style.width = Math.abs(v*20) + "px";
+        container.appendChild(bar);
+      });
+
+      // Update top 5 probabilities
+      const probsDiv = document.getElementById("probs");
+      probsDiv.innerHTML = "";
+      let probs = data.probs.map((p,i)=>[i,p]);
+      probs.sort((a,b)=>b[1]-a[1]);
+      for(let i=0; i<Math.min(5, probs.length); i++){
+        const [idx,val] = probs[i];
+        const div = document.createElement("div");
+        div.textContent = `Index ${idx}: ${val.toFixed(3)}`;
+        probsDiv.appendChild(div);
+      }
+    }
+  </script>
+</body>
+</html>
