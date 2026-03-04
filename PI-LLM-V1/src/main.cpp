@@ -1,3 +1,5 @@
+//THIS IS MADE AND DEVELOPED BY THE OWNERS OF THIS REPOSITORY https://github.com/CooperBanks/Random-Stuff-AI-related-that-I-hate-doing IF YOU FIND THIS ELSEWHERE IT IS FAKE
+
 #include <crow.h>
 #include "lstm.h"
 #include <Eigen/Dense>
