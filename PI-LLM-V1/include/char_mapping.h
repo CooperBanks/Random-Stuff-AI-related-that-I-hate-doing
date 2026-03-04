@@ -1,3 +1,5 @@
+// May want to make this better for V2, I may just procrastinate that though
+
 #ifndef CHAR_MAPPING_H
 #define CHAR_MAPPING_H
 
