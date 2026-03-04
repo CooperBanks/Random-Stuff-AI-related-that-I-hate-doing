@@ -6,3 +6,4 @@ raspberry pi five cpu only
 small embeddings hidden layers output
 visualization through web browser
 this is its data set it learns from it
+i hate this project so much yay
