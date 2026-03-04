@@ -1,0 +1,3 @@
+/home/a/tiny_llm/build/CMakeFiles/tiny_llm.dir
+/home/a/tiny_llm/build/CMakeFiles/edit_cache.dir
+/home/a/tiny_llm/build/CMakeFiles/rebuild_cache.dir
