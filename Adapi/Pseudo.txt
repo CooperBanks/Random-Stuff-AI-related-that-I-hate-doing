@@ -11,8 +11,9 @@ use a adaptive net that will create branches of itself to perform certian tasks
 thinking:
 use the best branch for current task
 have a dedicated branch for branch assignment
-use 150 layers
-4096 hidden
+use 5 layers
+35 hidden per layer 
+5 input nodes, 1 out
 use ARM64 or simmilar (PI compatible, as it is what i use to do testing)
 
 Performance:
