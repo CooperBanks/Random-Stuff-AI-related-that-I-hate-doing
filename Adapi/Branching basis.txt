@@ -1,0 +1,9 @@
+yep, i'm back 13 minutes later (for me atleast)
+so this txt is just the basics for the branching system
+
+so, to start off we make the base of just a small but fast NN as a manager (simmilar to how a job works: e.g give task > find good worker or hire > task done)
+then we take the manager and feed a task, since it hasn't done any work it will have to branch off to create a 'employee' or a worker node, from this node it generates the simplest NN required and completes the task
+next it is given another task to perform and creates another unique worker to specialise in this type of task
+now we give it another task, but this time like the first. it sees this and sends it to the original branch and this branch sees that it should grow to accomidate for more work
+
+so after feeding simmilar and not jobs it grows within certian constraints (read other files) and eventualy will be good at performing lots of tasks!
