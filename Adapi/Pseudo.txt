@@ -1,0 +1,28 @@
+hi, it is me again.
+i am going to put the ideal psudo for this model
+
+~~~~~~~~
+
+learning:
+use system info to adapt to hardware constraints
+use no public or privately known llm/AI systems
+use a adaptive net that will create branches of itself to perform certian tasks
+
+thinking:
+use the best branch for current task
+have a dedicated branch for branch assignment
+use 150 layers
+4096 hidden
+use ARM64 or simmilar (PI compatible, as it is what i use to do testing)
+
+Performance:
+run well on most systems
+no favor on OS
+Thermaly efficent
+Power efficient
+
+~~~~~~~~~~~
+
+Note: this is going to SUCK to code, if anyone (inevitably no one) sees this please reachout at lettucepotatoguy@gmail.com (yes i realise it is cringe)
+
+my ideas are a**
