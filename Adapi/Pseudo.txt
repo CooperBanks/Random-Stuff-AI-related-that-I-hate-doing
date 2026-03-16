@@ -5,16 +5,14 @@ i am going to put the ideal psudo for this model
 
 learning:
 use system info to adapt to hardware constraints
-use no public or privately known llm/AI systems
+use no public or privately known LLMs/AI systems
 use a adaptive net that will create branches of itself to perform certian tasks
 
 thinking:
 use the best branch for current task
-have a dedicated branch for branch assignment as so;
-> use 5 layers
-> 35 hidden per layer 
-> 5 input nodes, 1 out
-  use ARM64 or simmilar (PI compatible, as it is what i use to do testing)
+if there is a task that is simmilar/identical to the previous use the same branch
+if a new task is found that is inificient to the current branches create a new branch that is the MINIMUM required for that task
+if there is a task that is beyond the performance cap or system limits, return a error and skip/pause task
 
 Performance:
 run well on most systems
