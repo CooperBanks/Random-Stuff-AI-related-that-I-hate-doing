@@ -20,6 +20,14 @@ no favor on OS
 Thermaly efficent
 Power efficient
 
+Required Library list (it is indeed python and C++):
+Python; torch, numpy. tkinter/pyQt5
+C++ compiler; tiny-dnn, Possibly ONNX runtime
+Version control is git
+Extra; psutil (unclear if i NEED this) and some other to do logging
+
+The True starting date of this project is 3/16/2026, It will not be affecting this repository as i am keeping it in a seperate private repository...
+
 ~~~~~~~~~~~
 
 Note: this is going to SUCK to code, if anyone (inevitably no one) sees this please reachout at lettucepotatoguy@gmail.com (yes i realise it is cringe)
