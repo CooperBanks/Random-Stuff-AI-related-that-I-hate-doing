@@ -1,0 +1,7 @@
+So the goals for this project are as follows:
+- Capable of understanding and writing text
+- capable of most math and other computations
+- can learn based off of the input and scale as needed as long as under cap
+- user first UI/GUI
+- Run on ANYTHING
+- Be able to run on a Raspberry PI 5 8GB (I am using this as my dev enviroment)
