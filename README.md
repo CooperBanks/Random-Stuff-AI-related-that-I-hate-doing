@@ -5,3 +5,5 @@ Do stuff
 
 Implemented:
 PI-LLM-V1 -- A small untrained and quite horrid LLM that is developed on and designed for the Raspberry PI 5 8GB, Supporting a web interface that I, Myself... Barely understand :|
+
+Note: Adapti Has been removed from this repository as of 03/22/2026 And will be on a seperate repository.
